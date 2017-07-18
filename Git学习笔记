@@ -1,6 +1,12 @@
 #Git学习笔记
 #以下命令在mac 机的终端上运用
 
+#克隆你需要的库
+$git clone https://github.com/rmmzhao/hello-world
+#Git 支持多种数据传输协议。 
+#上面的例子使用的是 https:// 协议，
+#不过你也可以使用 git:// 协议或者使用 SSH 传输协议，比如 user@server:path/to/repo.git 。
+
 #查看git配置
 $git config --list
 #查看git用户配置
@@ -13,4 +19,14 @@ $vi .git/config.  (会覆盖上面的配置文件）
 #配置git用户
 $git config --global user.name "rmmzhao"
 $git config --global user.email "rmmzhao@163.com"
+
+#客户端修改后，提交变更的一系列git命令
+$git add filename
+$git commit -m "update comments"
+$git commit -a -m "update comments" (合并上面两行命令）
+$git push origin master  (提交到 库 中）
+
+#从库更新到客户端
+#git pull
+
 
