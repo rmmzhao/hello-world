@@ -24,7 +24,8 @@ $git config --global user.email "rmmzhao@163.com"
 $git add filename
 $git commit -m "update comments"
 $git commit -a -m "update comments" (合并上面两行命令）
-$git push origin master  (提交到 库 中）
+$git push origin master  (从客户端提交到库中）
+#如果库中有变更，这里会提交不成功，会提示先做git pull，从库中取最新后，再git push
 
 #从库更新到客户端
 #git pull
