@@ -1,0 +1,16 @@
+#Git学习笔记
+#以下命令在mac 机的终端上运用
+
+#查看git配置
+$git config --list
+#查看git用户配置
+$git config user.name
+
+#编辑git配置文件
+$vi ~/.gitconfig 
+$vi .git/config.  (会覆盖上面的配置文件）
+
+#配置git用户
+$git config --global user.name "rmmzhao"
+$git config --global user.email "rmmzhao@163.com"
+
